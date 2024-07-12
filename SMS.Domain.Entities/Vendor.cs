@@ -11,5 +11,8 @@ namespace SMS.Domain.Entities
 		public string Name { get; set; }
 		public string Code { get; set; }
 
-	}
+		public List<Purchaseorder>? Purchaseorder { get; set; }
+        public List<PurchasingExpenses>? PurchasingExpenses { get; set; }
+
+    }
 }

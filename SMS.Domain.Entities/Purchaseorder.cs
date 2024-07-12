@@ -12,5 +12,6 @@ namespace SMS.Domain.Entities
 		public Guid VendorId { get; set; }
 		public DateTime PODate { get; set; }
 		public Vendor Vendor { get; set; }
+        public List<PurchasingExpenses>? PurchasingExpenses { get; set; }
     }
 }

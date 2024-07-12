@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.03.01 - Interfaces", "03
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMS.Domain.Patterns.Interfaces", "SMS.Domain.Patterns.Interfaces\SMS.Domain.Patterns.Interfaces.csproj", "{6E43641F-F729-4334-9FFB-C7798528E64E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Domain.Patterns.Repositories", "SMS.Domain.Patterns.Repositories\SMS.Domain.Patterns.Repositories.csproj", "{24BCDF51-6C8E-4CA5-ADF0-4D568BB1D45D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMS.Domain.Patterns.Repositories", "SMS.Domain.Patterns.Repositories\SMS.Domain.Patterns.Repositories.csproj", "{24BCDF51-6C8E-4CA5-ADF0-4D568BB1D45D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.01.Data", "02.01.Data", "{82F91B5D-9E52-4E13-B569-459C8EF5178A}"
 EndProject
@@ -31,7 +31,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.03 - Business", "02.03 -
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.04 - Model", "02.04 - Model", "{5327CA94-4451-414E-BC2B-E53CAB319B50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Infrastructure.Data.Contexts", "SMS.Infrastructure.Data.Contexts\SMS.Infrastructure.Data.Contexts.csproj", "{25DBE557-2FCE-424F-8C72-669F4CBC73F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMS.Infrastructure.Data.Contexts", "SMS.Infrastructure.Data.Contexts\SMS.Infrastructure.Data.Contexts.csproj", "{25DBE557-2FCE-424F-8C72-669F4CBC73F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Infrastructure.Model", "SMS.Infrastructure.Model\SMS.Infrastructure.Model.csproj", "{214C3109-21FD-4515-B567-31ECDD89E0CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{25DBE557-2FCE-424F-8C72-669F4CBC73F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25DBE557-2FCE-424F-8C72-669F4CBC73F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25DBE557-2FCE-424F-8C72-669F4CBC73F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214C3109-21FD-4515-B567-31ECDD89E0CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214C3109-21FD-4515-B567-31ECDD89E0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214C3109-21FD-4515-B567-31ECDD89E0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214C3109-21FD-4515-B567-31ECDD89E0CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{E1583279-FFC0-41B1-AB0E-1A01AA311650} = {295A3B63-41F3-4E6A-876B-2A1F432BD625}
 		{5327CA94-4451-414E-BC2B-E53CAB319B50} = {295A3B63-41F3-4E6A-876B-2A1F432BD625}
 		{25DBE557-2FCE-424F-8C72-669F4CBC73F1} = {82F91B5D-9E52-4E13-B569-459C8EF5178A}
+		{214C3109-21FD-4515-B567-31ECDD89E0CB} = {5327CA94-4451-414E-BC2B-E53CAB319B50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0DDC9C05-999B-4585-81EC-1ACCE9B30B43}

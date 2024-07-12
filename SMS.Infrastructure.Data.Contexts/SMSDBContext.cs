@@ -22,9 +22,8 @@ namespace SMS.Infrastructure.Data.Contexts
         public virtual DbSet<Invoice> Invoice { get; set; }
         public virtual DbSet<InvoiceLine> InvoiceLine { get; set; }
         public virtual DbSet<Product> Product { get; set; }
-        //public virtual DbSet<Purchaseorder> Purchaseorder { get; set; }
-        //public virtual DbSet<PurchasingExpenses> PurchasingExpenses { get; set; }
-        //public virtual DbSet<Vendor> Vendor { get; set; }
+        public virtual DbSet<Purchaseorder> Purchaseorder { get; set; }
+        public virtual DbSet<PurchasingExpenses> PurchasingExpenses { get; set; }
         public virtual DbSet<Warehouse> Warehouse { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -35,6 +34,8 @@ namespace SMS.Infrastructure.Data.Contexts
             modelBuilder.ApplyConfiguration(new InvoiceLineConfiguration());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
             modelBuilder.ApplyConfiguration(new WarehouseConfiguration());
+            modelBuilder.ApplyConfiguration(new PurchaseorderConfiguration());
+            modelBuilder.ApplyConfiguration(new PurchasingExpensesConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }

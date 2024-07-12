@@ -27,6 +27,9 @@ namespace SMS.Infrastructure.Data.Contexts.Configuration
             builder.Property(I => I.Serial)
                 .IsRequired(true);
 
+            builder.Property(I => I.CustomerId)
+                .IsRequired(true);
+
             base.Configure(builder);
         }
     }
