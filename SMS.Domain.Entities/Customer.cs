@@ -10,10 +10,10 @@ namespace SMS.Domain.Entities
 	{
         public string Name { get; set; }
         public string Code { get; set; }
-        public double Customerdepit { get; set; }
+        public double Customerdepit { get; set; } = 0;
 
-        public List<CustomerPayment> CustomerPayments { get; set; }
-        public List<Invoice> Invoices { get; set; }
+        public List<CustomerPayment>? CustomerPayments { get; set; }
+        public List<Invoice>? Invoices { get; set; }
 
 	}
 }
