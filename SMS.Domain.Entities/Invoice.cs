@@ -12,5 +12,7 @@ namespace SMS.Domain.Entities
         public Guid CustomerId { get; set; }
         public DateTime InvoiceDate { get; set; }
         public Customer Customer { get; set; }
+        
+        public List<CustomerPayment>? CustomerPayment { get; set; }
     }
 }
