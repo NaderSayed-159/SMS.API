@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Domain.Entities\SMS.Domain.Entities.csproj" />
+    <ProjectReference Include="..\SMS.Domain.Patterns.Interfaces\SMS.Domain.Patterns.Interfaces.csproj" />
+    <ProjectReference Include="..\SMS.Domain.Patterns.Repositories\SMS.Domain.Patterns.Repositories.csproj" />
+    <ProjectReference Include="..\SMS.Infrastructure.Business.AutoMapper\SMS.Infrastructure.Business.AutoMapper.csproj" />
+    <ProjectReference Include="..\SMS.Infrastructure.Data.Contexts\SMS.Infrastructure.Data.Contexts.csproj" />
+    <ProjectReference Include="..\SMS.Infrastructure.Model\SMS.Infrastructure.Model.csproj" />
+  </ItemGroup>
+
+</Project>
