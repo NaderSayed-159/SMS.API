@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SMS.Domain.Patterns.Interfaces\SMS.Domain.Patterns.Interfaces.csproj" />
+    <ProjectReference Include="..\SMS.Infrastructure.Data.Contexts\SMS.Infrastructure.Data.Contexts.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,17 +4,18 @@ using System.Threading.Tasks;
 using SMS.Domain.Patterns.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using SMS.Domain.Patterns.Interfaces;
+using SMS.Infrastructure.Data.Contexts;
 
 namespace eSealClientSample.Domain.Patterns.Repositories
 {
 	public class UnitOfWork : IUnitOfWork
 	{
-		public UnitOfWork(DbContext context)
+		public UnitOfWork(SMSDBContext context)
 		{
 			Context = context;
 		}
 
-		protected DbContext Context { get; }
+		protected SMSDBContext Context { get; }
 
 		public virtual async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
 		{

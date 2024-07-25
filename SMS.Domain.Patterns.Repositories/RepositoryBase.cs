@@ -31,7 +31,31 @@ namespace SMS.Domain.Patterns.Repositories
 			return await FindAsync(new object[] { keyValue }, cancellationToken);
 		}
 
-		public virtual async Task<bool> ExistsAsync(object[] keyValues, CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<TEntity>> FindAllAsync(Expression<Func<TEntity, bool>> criteria, string[] includes = null)
+        {
+			IQueryable<TEntity> query = Set;
+            if (includes != null)
+			{
+				foreach (var include in includes)
+				{
+					query = query.Include(include);
+				}
+			}
+			return await query.Where(criteria).ToListAsync();
+        }
+        public async Task<IEnumerable<TEntity>> FindAllAsync(string[] includes = null)
+        {
+            IQueryable<TEntity> query = Set;
+            if (includes != null)
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+            return await query.ToListAsync();
+        }
+        public virtual async Task<bool> ExistsAsync(object[] keyValues, CancellationToken cancellationToken = default)
 		{
 			var item = await FindAsync(keyValues, cancellationToken);
 			return item != null;
@@ -102,6 +126,5 @@ namespace SMS.Domain.Patterns.Repositories
 		}
 
 
-
-	}
+    }
 }
