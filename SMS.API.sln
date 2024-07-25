@@ -33,7 +33,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.04 - Model", "02.04 - Mo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMS.Infrastructure.Data.Contexts", "SMS.Infrastructure.Data.Contexts\SMS.Infrastructure.Data.Contexts.csproj", "{25DBE557-2FCE-424F-8C72-669F4CBC73F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Infrastructure.Model", "SMS.Infrastructure.Model\SMS.Infrastructure.Model.csproj", "{214C3109-21FD-4515-B567-31ECDD89E0CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMS.Infrastructure.Model", "SMS.Infrastructure.Model\SMS.Infrastructure.Model.csproj", "{214C3109-21FD-4515-B567-31ECDD89E0CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMS.Infrastructure.Business", "SMS.Infrastructure.Business\SMS.Infrastructure.Business.csproj", "{15BC99E1-E158-445E-AD98-D70B2C0C8EB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMS.Infrastructure.Business.AutoMapper", "SMS.Infrastructure.Business.AutoMapper\SMS.Infrastructure.Business.AutoMapper.csproj", "{FCB04DE2-B3F2-4DF9-80A2-4176A49E43E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,14 @@ Global
 		{214C3109-21FD-4515-B567-31ECDD89E0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{214C3109-21FD-4515-B567-31ECDD89E0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{214C3109-21FD-4515-B567-31ECDD89E0CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15BC99E1-E158-445E-AD98-D70B2C0C8EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BC99E1-E158-445E-AD98-D70B2C0C8EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BC99E1-E158-445E-AD98-D70B2C0C8EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BC99E1-E158-445E-AD98-D70B2C0C8EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB04DE2-B3F2-4DF9-80A2-4176A49E43E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB04DE2-B3F2-4DF9-80A2-4176A49E43E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB04DE2-B3F2-4DF9-80A2-4176A49E43E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB04DE2-B3F2-4DF9-80A2-4176A49E43E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +95,8 @@ Global
 		{5327CA94-4451-414E-BC2B-E53CAB319B50} = {295A3B63-41F3-4E6A-876B-2A1F432BD625}
 		{25DBE557-2FCE-424F-8C72-669F4CBC73F1} = {82F91B5D-9E52-4E13-B569-459C8EF5178A}
 		{214C3109-21FD-4515-B567-31ECDD89E0CB} = {5327CA94-4451-414E-BC2B-E53CAB319B50}
+		{15BC99E1-E158-445E-AD98-D70B2C0C8EB6} = {E1583279-FFC0-41B1-AB0E-1A01AA311650}
+		{FCB04DE2-B3F2-4DF9-80A2-4176A49E43E4} = {E1583279-FFC0-41B1-AB0E-1A01AA311650}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0DDC9C05-999B-4585-81EC-1ACCE9B30B43}
