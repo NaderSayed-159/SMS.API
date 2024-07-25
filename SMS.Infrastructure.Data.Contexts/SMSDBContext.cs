@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SMS.Domain.Entities;
 using SMS.Infrastructure.Data.Contexts.Configuration;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SMS.Infrastructure.Data.Contexts
 {
-    public class SMSDBContext:DbContext
+    public class SMSDBContext:IdentityDbContext
     {
         public SMSDBContext():base() { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
