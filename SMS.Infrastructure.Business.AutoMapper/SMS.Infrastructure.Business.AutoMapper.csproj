@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Domain.Entities\SMS.Domain.Entities.csproj" />
+    <ProjectReference Include="..\SMS.Infrastructure.Model\SMS.Infrastructure.Model.csproj" />
+  </ItemGroup>
+
+</Project>
