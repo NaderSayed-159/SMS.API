@@ -11,6 +11,8 @@ namespace SMS.Domain.Patterns.Interfaces
 	{
 		Task<TEntity> FindAsync(object[] keyValues, CancellationToken cancellationToken = default);
 		Task<TEntity> FindAsync<TKey>(TKey keyValue, CancellationToken cancellationToken = default);
+		Task<IEnumerable<TEntity>> FindAllAsync(Expression<Func<TEntity, bool>> criteria, string[] includes = null);
+		Task<IEnumerable<TEntity>> FindAllAsync(string[] includes = null);
 		Task<bool> ExistsAsync(object[] keyValues, CancellationToken cancellationToken = default);
 		Task<bool> ExistsAsync<TKey>(TKey keyValue, CancellationToken cancellationToken = default);
 
