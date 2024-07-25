@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SMS.Infrastructure.Model
 {
-    internal class PurchaseorderModel : ModelEntityBase<Guid>
+    public class PurchaseorderModel : ModelEntityBase<Guid>
     {
         [Required]
         public string Serial { get; set; }

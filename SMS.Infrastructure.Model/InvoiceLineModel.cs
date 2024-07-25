@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SMS.Infrastructure.Model
 {
-    internal class InvoiceLineModel : ModelEntityBase<Guid>
+    public class InvoiceLineModel : ModelEntityBase<Guid>
     {
         [Required]
         public Guid productId { get; set; }

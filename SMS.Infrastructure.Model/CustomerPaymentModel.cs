@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SMS.Infrastructure.Model
 {
-    internal class CustomerPaymentModel : ModelEntityBase<Guid>
+    public class CustomerPaymentModel : ModelEntityBase<Guid>
     {
         [Required]
         public double PaiedAmount { get; set; }
@@ -15,7 +15,7 @@ namespace SMS.Infrastructure.Model
         public Guid CustomerId { get; set; }
         [Required]
         public Guid InvoiceId { get; set; }
-        public CustomerModel Customer { get; set; }
+        public CustomerModel? Customer { get; set; }
         public InvoiceModel? Invoice { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SMS.Infrastructure.Model
 {
-    internal class PurchasingExpensesModel : ModelEntityBase<Guid>
+    public class PurchasingExpensesModel : ModelEntityBase<Guid>
     {
         [Required]
         public double PaiedAmount { get; set; }
@@ -15,7 +15,7 @@ namespace SMS.Infrastructure.Model
         public Guid VendorId { get; set; }
         [Required]
         public Guid PurchaseOrderId { get; set; }
-        public VendorModel Vendor { get; set; }
+        public VendorModel? Vendor { get; set; }
         public PurchaseorderModel? Purchaseorder { get; set; }
     }
 }

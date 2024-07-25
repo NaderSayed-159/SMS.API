@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SMS.Infrastructure.Model
 {
-    internal class ProductModel : ModelEntityBase<Guid>
+    public class ProductModel : ModelEntityBase<Guid>
     {
         [Required]
         public string Name { get; set; }
@@ -17,7 +17,7 @@ namespace SMS.Infrastructure.Model
         public Guid WarehouseId { get; set; }
         [Required]
         public double StockAmount { get; set; }
-        public WarehouseModel Warehouse { get; set; }
+        public WarehouseModel? Warehouse { get; set; }
         public List<InvoiceLineModel>? InvoiceLines { get; set; }
 
     }

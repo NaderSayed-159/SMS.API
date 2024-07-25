@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SMS.Infrastructure.Model
 {
-    internal class VendorModel : ModelEntityBase<Guid>
+    public class VendorModel : ModelEntityBase<Guid>
     {
         [Required]
         public string Name { get; set; }
